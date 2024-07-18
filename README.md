@@ -1,3 +1,3 @@
-# Proyecto final de la cursada fullstack
+#Primera entrega del proyecto final
 
 Nicolás Eiriz
