@@ -1,1 +1,3 @@
-# proyecto-final-educ-it
+# Proyecto final de la cursada fullstack
+
+Nicolás Eiriz
