@@ -1,0 +1,55 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header{
+  height: 490px;
+  padding-top: 10px;
+  background-image: url(../images/main/bruce-tang-uiykhf8K3wY-unsplash.jpg);
+  background-size: cover;
+  background-position: center 41%;
+  opacity: 0.9;
+}
+
+nav{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+nav .title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+nav .title img{
+  width: 60px;
+}
+
+ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+ul li{
+  list-style: none;
+}
+
+ul li{
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+
+ul li a{
+  text-decoration: none;
+  color: black;
+}
