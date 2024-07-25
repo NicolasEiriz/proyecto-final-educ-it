@@ -26,9 +26,12 @@ nav .title{
   justify-content: center;
 }
 
+#icono-pua{
+  width: 120px;
+}
 
-nav .title img{
-  width: 60px;
+#logo{
+  width: 250px;
 }
 
 ul{
