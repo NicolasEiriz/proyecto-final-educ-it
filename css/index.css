@@ -12,6 +12,7 @@ header{
   background-size: cover;
   background-position: center 41%;
   opacity: 0.9;
+  margin-bottom: 30px;
 }
 
 nav{
@@ -56,4 +57,11 @@ ul li{
 ul li a{
   text-decoration: none;
   color: black;
+}
+
+.separador{
+  width: 150px;
+  /* height: 10px; */
+  border: 1px solid #7291ca;
+  margin: 0 auto;
 }
