@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+/* body{
+  display: flex;
+  flex-direction: column;
+} */
 
 header{
   height: 490px;
@@ -12,7 +16,7 @@ header{
   background-size: cover;
   background-position: center 41%;
   opacity: 0.9;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 nav{
@@ -59,9 +63,47 @@ ul li a{
   color: black;
 }
 
-.separador{
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+h2{
+  margin-top: 0px;
+  text-transform: uppercase;
+ }
+
+.guitarras{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.guitarra{
   width: 150px;
-  /* height: 10px; */
-  border: 1px solid #7291ca;
-  margin: 0 auto;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.guitarra img{
+  width: 100%;
+}
+
+.guitarras > article{
+  display: flex ;
+  align-items: center;
+  flex-direction: column;
+  gap:30px;
+}
+
+.guitarras .articulo{
+  display: flex;
+
 }
