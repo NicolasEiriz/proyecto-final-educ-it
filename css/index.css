@@ -80,17 +80,26 @@ h2{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 70px;
 }
 
 .guitarra{
   width: 150px;
-  height: 150px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 5px;
+  border: 1px solid transparent;
+  transition: border-color 0.7s ease;
 }
+
+.guitarra:hover{
+  border-color: #314853;
+}
+
+
 
 .guitarra img{
   width: 100%;
@@ -100,10 +109,22 @@ h2{
   display: flex ;
   align-items: center;
   flex-direction: column;
-  gap:30px;
+  gap: 70px;
+  
 }
 
 .guitarras .articulo{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 
+
+
+footer{
+  height: 300px;
+  background-color: #2b424d;
+  color: #adadad;
 }
