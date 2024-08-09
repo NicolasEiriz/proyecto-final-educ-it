@@ -9,14 +9,16 @@
 <body>
   <header>
     <nav>
+      <a href="../index.html">
         <div class="title">
-            <a href="./index.html"><img id="icono-pua" src="../iconos/pua.svg" alt="" srcset=""></a>
+            <img id="icono-pua" src="../iconos/pua.svg" alt="" srcset="">
             <img id="logo" src="../images/main/logo.png" alt="" srcset="">
         </div>
+      </a>
         <ul>
-            <li><a href="./pages/alta.html">Alta</a></li>
-            <li><a href="./pages/nosotros.html">Nosotros</a></li>
-            <li><a href="./pages/contacto.html">Contacto</a></li>
+            <li><a href="../pages/alta.html">Alta</a></li>
+            <li><a href="../pages/nosotros.html">Nosotros</a></li>
+            <li><a href="../pages/contacto.html">Contacto</a></li>
         </ul>
     </nav>
 </header>
@@ -53,7 +55,44 @@
     </p>
 
     <p>
-      <textarea name="descripcion-producto" id="descripcion-producto" placeholder="Ingrese descripcion del producto"></textarea>
+      <label for="descripcion-corta-producto">Descripción corta del producto</label>
+      <input type="text" name="descripcion-corta-producto" id="descripcion-corta-producto" placeholder="Guitarra modelo">
+    </p>
+
+    <p>
+      <label for="descripcion-larga-producto">Descripción larga del producto</label>
+      <textarea name="descripcion-larga-producto" id="descripcion-larga-producto" placeholder="Ingrese la descripción larga del producto"></textarea>
+    </p>
+
+    <p>
+      <fieldset>
+        <legend>Seleccione el tipo de envío</legend>    
+
+      <div>
+        <input type="radio" name="tipo-envio" id="envio-sin-cargo">
+        <label for="envio-sin-cargo">Envío sin cargo</label>
+      </div>
+
+      <div>
+        <input type="radio" name="tipo-envio" id="envio-con-cargo">
+        <label for="envio-sin-cargo">Envío con cargo</label>
+      </div>
+
+      </fieldset>
+    </p>
+
+    <p >
+      <div id="edad-permitida">
+      <div class="edad">
+        <label for="edad-minima">Edad mínima</label>
+        <input type="number" name="edad-minima" id="edad-minima" min="0">
+      </div>
+
+      <div class="edad">
+        <label for="edad-maxima">Edad máxima</label>
+        <input type="number" name="edad-maxima" id="edad-maxima" min="0" max="100">
+      </div>
+    </div>
     </p>
 
     <p>

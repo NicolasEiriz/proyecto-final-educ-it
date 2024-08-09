@@ -11,7 +11,6 @@ header{
   background-size: cover;
   background-position: center 41%;
   opacity: 0.9;
-  margin-bottom: 25px;
 }
 
 nav{
@@ -64,6 +63,7 @@ main{
   align-items: center;
   justify-content: center;
   gap: 50px;
+  background-color: #f6f7f9;
 }
 
 
@@ -74,24 +74,47 @@ main{
   align-items: center;
   justify-content: center;
   gap: 10px;
-  border:1px solid black;
   width: 400px;
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 25px;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  background-color: #ffffff;
+  box-shadow:  #2b424d 0px 0px 40px;
 }
 
 form h2{
  font-size: 20px;
  align-self: flex-start;
  margin-bottom: 10px;
+ color: #2c3036;
+
 }
 
-form label{
-  color: #616d7a;
+form label, fieldset{
+  color: #414851;
 }
 
-form input{
+fieldset{
+  border: 1px solid #c6c8cb;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+legend{
+  font-size: 16px;
+  color: #2c3036;
+  padding: 0 5px;
+}
+
+fieldset div{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+form input, fieldset{
   width: 300px;
   height: 30px;
 }
@@ -99,12 +122,13 @@ form input,
 button,
 textarea{
   border-radius: 5px;
-  border: 1px solid #ebedf0;
+  border: 1px solid #c6c8cb;
 
 }
 
-form button{
-  padding: 10px 20px;
+form input[type='radio']{
+  width: auto;
+  margin-right: 10px;
 }
 
 form input,
@@ -122,17 +146,40 @@ form textarea{
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 5px;
+  gap: 10px;
 }
 
+fieldset{
+  height: 100px;
+}
+
+#edad-permitida{
+  display: flex;
+  width: 300px;
+  gap: 50px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.edad{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ gap: 15px;
+ text-align: center;
+}
+
+.edad input{
+  width: 60px;
+}
 form p:last-of-type{
   align-items: center;
   gap: 5px;
-  /* flex-direction: row; */
-  /* gap: 10px; */
 }
 
 form p:last-of-type button{
+  width: 300px;
+  height: 40px;
   color: #fff;
   cursor: pointer;
   letter-spacing: 0.5px; 
