@@ -1,125 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../iconos/favi.ico" type="image/x-icon">
   <link rel="stylesheet" href="../css/alta.css">
-  <title>Document</title>
+  <title>Johnny Guitars - Alta usuario</title>
 </head>
 <body>
   <header>
     <nav>
       <a href="../index.html">
         <div class="title">
-            <img id="icono-pua" src="../iconos/pua.svg" alt="" srcset="">
-            <img id="logo" src="../images/main/logo.png" alt="" srcset="">
+          <img id="icono-pua" src="../iconos/pua.svg" alt="pua negra">
+          <img id="logo" src="../images/main/logo.png" alt="logo de johnny guitars con la frase 'encuentra tu mejor sonido'">
         </div>
       </a>
-        <ul>
-            <li><a href="../pages/alta.html">Alta</a></li>
-            <li><a href="../pages/nosotros.html">Nosotros</a></li>
-            <li><a href="../pages/contacto.html">Contacto</a></li>
-        </ul>
+      <ul>
+        <li><a href="../pages/nosotros.html">Nosotros</a></li>
+        <li><a href="../pages/alta.html">Alta</a></li>
+        <li><a href="../pages/contacto.html">Contacto</a></li>
+      </ul>
     </nav>
-</header>
+  </header>
 
-<main>
+  <main>
+    <section>
+      <form>
+        <h2>Registro de producto</h2>
+        <p>
+          <label for="nombre-usuario">Ingrese su nombre</label>
+          <input type="text" name="nombre-usuario" id="nombre-usuario" placeholder="Nombre" required>
+        </p>
 
-  
-  <form action="">
-    <h2>Registro de producto</h2>
-    <p>
-      <label for="nombre-usuario">Ingrese su nombre</label>
-      <input type="text" name="nombre-usuario" id="nombre-usuario" placeholder="Nombre" required>
-    </p>
+        <p>
+          <label for="precio-producto">Precio del producto</label>
+          <input type="text" name="precio-producto" id="precio-producto" placeholder="Precio" required>
+        </p>
 
-    <p>
-      <label for="precio-producto">Precio del producto</label>
-      <input type="text" name="precio-producto" id="precio-producto" placeholder="Precio" required>
-    </p>
+        <p>
+          <label for="cantidad-stock">Cantidad de stock</label>
+          <input type="text" name="cantidad-stock" id="cantidad-stock" placeholder="Stock" required>
+        </p>
 
-    <p>
-      <label for="cantidad-stock">Cantidad de stock</label>
-      <input type="text" name="cantidad-stock" id="cantidad-stock" placeholder="Stock" required>
-    </p>
+        <p>
+          <label for="marca-producto">Marca del producto</label>
+          <input type="text" name="marca-producto" id="marca-producto" placeholder="Marca" required>
+        </p>
 
-    <p>
-      <label for="marca-producto">Marca del producto</label>
-      <input type="text" name="marca-producto" id="marca-producto" placeholder="Marca" required>
-    </p>
+        <p>
+          <label for="categoria-producto">Categoria del producto</label>
+          <input type="text" name="categoria-producto" id="categoria-producto" placeholder="Categoria" required>
+        </p>
 
-    <p>
-      <label for="categoria-producto">Categoria del producto</label>
-      <input type="text" name="categoria-producto" id="categoria-producto" placeholder="Categoria" required>
+        <p>
+          <label for="descripcion-corta-producto">Descripción corta del producto</label>
+          <input type="text" name="descripcion-corta-producto" id="descripcion-corta-producto" placeholder="Guitarra modelo" required>
+        </p>
 
-    </p>
+        <p>
+          <label for="descripcion-larga-producto">Descripción larga del producto</label>
+          <textarea name="descripcion-larga-producto" id="descripcion-larga-producto" placeholder="Ingrese la descripción larga del producto"></textarea>
+        </p>
 
-    <p>
-      <label for="descripcion-corta-producto">Descripción corta del producto</label>
-      <input type="text" name="descripcion-corta-producto" id="descripcion-corta-producto" placeholder="Guitarra modelo" required>
-    </p>
+        <fieldset>
+          <legend>Seleccione el tipo de envío</legend>    
 
-    <p>
-      <label for="descripcion-larga-producto">Descripción larga del producto</label>
-      <textarea name="descripcion-larga-producto" id="descripcion-larga-producto" placeholder="Ingrese la descripción larga del producto"></textarea>
-    </p>
+          <div>
+            <input type="radio" name="tipo-envio" id="envio-sin-cargo">
+            <label for="envio-sin-cargo">Envío sin cargo</label>
+          </div>
 
-    <p>
-      <fieldset>
-        <legend>Seleccione el tipo de envío</legend>    
+          <div>
+            <input type="radio" name="tipo-envio" id="envio-con-cargo">
+            <label for="envio-con-cargo">Envío con cargo</label>
+          </div>
+        </fieldset>
 
-      <div>
-        <input type="radio" name="tipo-envio" id="envio-sin-cargo">
-        <label for="envio-sin-cargo">Envío sin cargo</label>
-      </div>
+        <div id="edad-permitida">
+          <div class="edad">
+            <label for="edad-minima">Edad mínima</label>
+            <input type="number" name="edad-minima" id="edad-minima" min="0">
+          </div>
 
-      <div>
-        <input type="radio" name="tipo-envio" id="envio-con-cargo">
-        <label for="envio-sin-cargo">Envío con cargo</label>
-      </div>
+          <div class="edad">
+            <label for="edad-maxima">Edad máxima</label>
+            <input type="number" name="edad-maxima" id="edad-maxima" min="0" max="100">
+          </div>
+        </div>
 
-      </fieldset>
-    </p>
+        <p>
+          <label for="imagen-usuario">Inserte una foto</label>
+          <input type="file" name="imagen-usuario" id="imagen-usuario">
+        </p>
 
-    <p >
-      <div id="edad-permitida">
-      <div class="edad">
-        <label for="edad-minima">Edad mínima</label>
-        <input type="number" name="edad-minima" id="edad-minima" min="0">
-      </div>
+        <p>
+          <button type="submit" class="cargar-producto">Cargar Producto</button>
+          <button type="reset" class="limpiar">Limpiar</button>
+        </p>
+      </form>
+    </section>
+  </main>
 
-      <div class="edad">
-        <label for="edad-maxima">Edad máxima</label>
-        <input type="number" name="edad-maxima" id="edad-maxima" min="0" max="100">
-      </div>
-    </div>
-    </p>
+  <footer>
+    <ul>
+      <li><a href="../index.html">Johnny Guitars</a></li>
+      <li><p>En Johnny Guitars, llevamos más de una década ayudando a músicos a descubrir su mejor sonido. Seguinos en nuestras redes y enterate de las últimas novedades. ¡La música nos une!</p></li>
+    </ul>
 
-    <p>
-      <label for="imagen-usuario">Inserte una foto</label>
-      <input type="file" name="imagen-usuario" id="imagen-usuario">
-    </p>
-    <p>
-      <button type="submit" class="cargar-producto">Cargar Producto</button>
-      <button type="reset" class="limpiar">Limpiar</button>
-    </p>
-  </form>
-</main>
-
-<footer>
-  <ul>
-
-  </ul>
-
-  <ul>
-
-  </ul>
-
-  <ul>
-
-  </ul>
-
-
-</footer>
+    <ul>
+      <li><a href="../index.html">Productos</a></li>
+      <li><a href="../index.html">Guitarras Gibson</a></li>
+      <li><a href="../index.html">Guitarras SG</a></li>
+    </ul>
+    
+    <ul>
+      <li><a href="../index.html">Links útiles</a></li>
+      <li><a href="../pages/nosotros.html">Un poco de nuestra historia</a></li>
+      <li><a href="../pages/alta.html">Formulario de alta</a></li>
+      <li><a href="../pages/contacto.html">Contacto</a></li>
+    </ul>
+  </footer>
 </body>
 </html>

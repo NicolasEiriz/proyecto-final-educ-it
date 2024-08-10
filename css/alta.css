@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 header{
   height: 490px;
   padding-top: 10px;
@@ -88,6 +92,8 @@ form h2{
  align-self: flex-start;
  margin-bottom: 10px;
  color: #2c3036;
+ font-weight: 700;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 
@@ -201,7 +207,37 @@ form p:last-of-type button{
 }
 
 footer{
-  height: 300px;
-  background-color: #2b424d;
-  color: #adadad;
+  min-height: 300px;
+  background-color: #1d2331;
+  color:#b0c2c4b7;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 50px;
+  padding: 40px;
+ 
+}
+
+footer ul{
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+footer li > a{
+  color:#b0c2c4b7;
+}
+
+footer ul li:first-of-type{
+  padding-bottom: 8px;
+  border-bottom: 3px solid #332c62;
+}
+
+footer ul li:first-of-type a{
+  color: #fff;
+
 }
